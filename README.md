@@ -26,8 +26,8 @@ Use the best practices to build the application that meets your 'production-read
 
 ## Requirements
 1. The server uses snake notation. Usually, the front-end uses camel-case notation. Create an universal function that will transform returned `variant` and `columns` to the camel case format.
-2. Create a UI that displays a single frame from the `variant` in form of a row. Data in the `columns` array are the only one that should be displayed. Hide columns that have `is_hidden` field set to `true`. Ignore columns you can find in `variant.working_data.frames` but are not present in `columns` array. User should be able to switch between frames of the `variant` by clicking the square buttons in the top-left part of the application.
-3. When user clicks on the `Copy Frames` button all the variant's frames Ushould be copied, stored in state and displayed.
+2. Create a UI that displays a single frame from the `variant` in form of a row. Render only data that is present in the `columns` array. Hide columns that have `is_hidden` field set to `true`. Ignore columns you can find in `variant.working_data.frames` but are not present in `columns` array. User should be able to switch between frames of the `variant` by clicking the square buttons in the top-left part of the application.
+3. When user clicks on the `Copy Frames` button all the variant's frames should be copied, stored in state and displayed.
 4. When the application throws an 'Unauthorized' error, it should show a pop-up window with text "You are not authorised". User should be able to close the pop-up window by clicking on the "X" or by clicking away.
 
 Good Luck!
