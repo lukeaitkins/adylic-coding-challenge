@@ -5,7 +5,7 @@ This coding challenge is an opportuninty for you to show us your advanced JavaSc
 Send us a link to the github repository that we can easily clone and run.
 
 # Problem
-[Here](https://github.com/Adylic/react-coding-challenge) you can find the scheleton of the application. Clone it and use as a starting point for your application.
+[Here](https://github.com/Adylic/react-coding-challenge) you can find theeleton of the application. Clone it and use as a starting point for your application.
 
 In the `/server` directory you can find a `mockFetch` function that you can use as if you were fetching the data from a real server. The `mockFetch` exposes two endpoints: `/variant` and `/columns`.
 
@@ -14,7 +14,7 @@ Each endpoint uses timeout to resolve the promise at a random time.
 10% of responses throw and unauthorised error.
 
 ### Variant
-There is only a single variant returned by the 'mockFetch` function. A variant is an object. One of its properties is `working_data`. There you can find frames objects `first`, `middle`, `last`. 
+There is only a single variant returned by the `mockFetch` function. A variant is an object. One of its properties is `working_data`. There you can find frames objects `first`, `middle`, `last`. 
 Each frame has a `frame_id` and a `content` object. The `content` object includes `key-value` pairs.
 
 ### Columns
