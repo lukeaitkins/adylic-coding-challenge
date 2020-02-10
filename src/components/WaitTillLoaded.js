@@ -17,4 +17,5 @@ WaitTillLoaded.propTypes = {
 }
 
 WaitTillLoaded.displayName = 'WaitTillLoaded';
+
 export default WaitTillLoaded;
