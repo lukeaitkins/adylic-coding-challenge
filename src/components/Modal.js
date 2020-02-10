@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const Modal = ({ children, show, onClose }) => (
     <div className={`modal-background ${show ? 'visible' : ''}`}>
