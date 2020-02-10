@@ -36,21 +36,25 @@ const getResponse = responseBody => {
 export const mockFetch = endpoint => {
   const serverDelay = MAX_DELAY * Math.random();
 
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     let response = null;
     setTimeout(() => {
-      switch (endpoint) {
-        case "/variant":
-          response = getResponse(variant);
-          resolve(response);
-          break;
-        case "/columns":
-          response = getResponse(columns);
-          resolve(response);
-          break;
-        default:
-          resolve(response);
-      }
-    }, serverDelay);
+      try {
+        switch (endpoint) {
+          case "/variant":
+            response = getResponse(variant);
+            resolve(response);
+            break;
+          case "/columns":
+            response = getResponse(columns);
+            resolve(response);
+            break;
+          default:
+            resolve(response);
+          }
+        } catch (err) {
+          reject(err);
+        }
+      }, serverDelay);
   });
 };
